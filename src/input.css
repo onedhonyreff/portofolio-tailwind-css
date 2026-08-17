@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #05668d; /* Warna dominan komponen (Navbar, Button Utama) */
+    --color-secondary: #028090; /* Warna pendukung / Status Hover */
+    --color-accent: #00a896; /* Penarik perhatian (Link, Badge, Border Aktif) */
+    --color-accent-light: #02c39a; /* Tombol sekunder / Elemen penunjang terang */
+    --color-light: #f0f3bd; /* Latar belakang komponen (Card background) */
+    --color-txt-primary: #0f172b;
+    --color-txt-secondary: #62748e;
+
+    /* Menambah font-inter */
+    --font-inter: "Inter", sans-serif;
+
+    --breakpoint-2xl: 1320px; /* 1. Mengubah ukuran breakpoint 2xl */
+}
+
+/* 2. Mengatur center dan padding otomatis pada kelas container */
+@utility container {
+    margin-inline: auto; /* Membuat kontainer otomatis di tengah (center: true) */
+    padding-inline: 16px; /* Memberikan padding kiri-kanan sebesar 16px */
+}
+
+/* @utility hamburger-line {
+  @apply w-7.5 h-0.5 my-2 block bg-txt-primary;
+} */
+
+@utility hamburger-line {
+    display: block;
+    width: 1.875rem; /* Menggantikan w-7.5 (30px) */
+    height: 0.125rem; /* Menggantikan h-0.5 (2px) */
+    margin-block: 0.5rem; /* Menggantikan my-2 (margin top & bottom) */
+    background-color: var(
+        --color-txt-primary
+    ); /* Memanggil warna kustom dari tema v4 */
+}
+
+@utility hamburger-active {
+    & > span:nth-child(1) {
+        rotate: 45deg;
+        /* transform-origin: 0 0; */
+        translate: 4.4px 0;
+    }
+}
+
+@utility hamburger-active {
+    & > span:nth-child(2) {
+        scale: 0;
+    }
+}
+
+@utility hamburger-active {
+    & > span:nth-child(3) {
+        rotate: -45deg;
+        /* transform-origin: 0 100%; */
+        translate: 4.4px 0;
+    }
+}
+
+@utility navbar-fixed {
+    position: fixed;
+    z-index: 9999;
+    background-color: color-mix(in srgb, var(--color-white) 70%, transparent);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgb(0, 0, 0, 0.2);
+}
