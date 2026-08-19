@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +41,7 @@
               id="nav-menu"
               class="absolute top-full right-4 hidden w-full max-w-62.5 rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-none lg:rounded-none lg:bg-transparent lg:shadow-none"
             >
-              <ul class="block lg:flex">
+              <ul class="block lg:flex lg:items-center">
                 <li class="group nav-item">
                   <a
                     href="#home"
@@ -83,6 +83,26 @@
                     class="text-txt-primary group-hover:text-accent mx-8 flex py-2 text-base"
                     >Contact</a
                   >
+                </li>
+                <li id="dark-toggle-indicator">
+                  <div class="mt-6 ml-8 flex justify-start lg:mt-0">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input
+                      type="checkbox"
+                      id="dark-toggle"
+                      class="peer hidden"
+                    />
+                    <label for="dark-toggle" class="group">
+                      <div
+                        class="flex h-5.5 w-9.25 cursor-pointer items-center rounded-full border border-slate-500 bg-slate-500 p-1 transition-colors duration-300 group-peer-checked:bg-white"
+                      >
+                        <div
+                          class="h-4 w-4 rounded-full bg-white transition-transform duration-300 group-peer-checked:translate-x-3 group-peer-checked:bg-slate-500"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -127,7 +147,7 @@
                 class="mx-auto max-w-full"
               />
               <span
-                class="absolute -bottom-10 left-1/2 -z-10 -translate-x-1/2 sm:scale-180 md:bottom-10 md:scale-200 lg:-bottom-10 lg:scale-150"
+                class="absolute -bottom-26 left-1/2 -z-10 -translate-x-1/2 sm:-bottom-8 sm:scale-160 md:bottom-10 md:scale-180 lg:-bottom-10 lg:scale-120 xl:bottom-0 xl:scale-150"
               >
                 <svg
                   width="400"
@@ -165,8 +185,9 @@
             <p
               class="text-txt-secondary max-w-xl text-base font-medium lg:text-lg"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              optio nostrum possimus perspiciatis commodi, tempore a!
+              Di sini saya berbagi pengalaman, pembelajaran, dan berbagai hal
+              yang saya temui selama mengembangkan aplikasi web menggunakan
+              teknologi modern.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
@@ -178,8 +199,9 @@
             <p
               class="font text-txt-secondary mb-6 text-base font-medium lg:text-lg"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae aperiam odit ipsum quo vel possimus vero labore sit.
+              Selain berbagi pengetahuan tentang programming, saya juga terbuka
+              untuk berdiskusi, bertukar pengalaman, dan membangun koneksi
+              dengan sesama developer.
             </p>
             <div class="flex items-center">
               <!-- Youtube -->
@@ -296,8 +318,9 @@
               Project Terbaru
             </h2>
             <p class="text-txt-secondary text-base font-medium md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              vitae quis quo eligendi et iure natus nulla libero cum eum.
+              Berikut adalah beberapa project yang pernah saya kerjakan, mulai
+              dari website e-commerce hingga aplikasi dan dashboard yang
+              berfokus pada kebutuhan pengguna.
             </p>
           </div>
         </div>
@@ -317,8 +340,9 @@
               E-Commerce Furniture Website
             </h3>
             <p class="text-txt-secondary text-base font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur explicabo laborum ex!
+              Website e-commerce yang dirancang untuk menampilkan produk
+              furniture dengan tampilan yang nyaman, navigasi yang jelas, dan
+              pengalaman belanja yang sederhana.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -333,8 +357,9 @@
               Dashboard Analitik Finansial (SaaS)
             </h3>
             <p class="text-txt-secondary text-base font-medium">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-              vel dolore provident.!
+              Dashboard SaaS untuk memantau dan menganalisis data finansial
+              secara lebih terstruktur, sehingga informasi penting dapat
+              dipantau dengan cepat.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -349,8 +374,9 @@
               Aplikasi Mobile Manajemen Tugas / Produktivitas (UI/UX)
             </h3>
             <p class="text-txt-secondary text-base font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              pariatur dolor dolorum!
+              Aplikasi mobile untuk membantu pengguna mengatur tugas, menyusun
+              prioritas, dan menjaga produktivitas melalui antarmuka yang
+              sederhana dan intuitif.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -365,8 +391,9 @@
               Website Portofolio Agensi Kreatif atau Fotografi
             </h3>
             <p class="text-txt-secondary text-base font-medium">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam,
-              tempora tenetur! Eum.
+              Website portofolio yang dirancang untuk menampilkan karya agensi
+              kreatif atau fotografer secara menarik, profesional, dan mudah
+              dijelajahi.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -381,8 +408,9 @@
               Landing Page Platform Kursus Online (EdTech)
             </h3>
             <p class="text-txt-secondary text-base font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              corrupti excepturi dolorum.
+              Landing page untuk platform kursus online yang menonjolkan
+              informasi program, manfaat pembelajaran, serta ajakan untuk mulai
+              belajar.
             </p>
           </div>
         </div>
@@ -402,8 +430,9 @@
               Yang Pernah Bekerjasama
             </h2>
             <p class="text-base font-medium text-slate-300 md:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-              ipsum debitis sequi?
+              Beberapa perusahaan dan organisasi telah menjadi bagian dari
+              perjalanan profesional saya melalui berbagai project dan
+              kolaborasi di bidang teknologi.
             </p>
           </div>
         </div>
@@ -452,8 +481,9 @@
               Tulisan Terkini
             </h2>
             <p class="text-txt-secondary text-base font-medium md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              laudantium doloribus quia ut!
+              Berbagai tulisan seputar programming, pengembangan aplikasi, dan
+              pengalaman belajar teknologi yang dapat membantu Anda memahami
+              dunia software development.
             </p>
           </div>
         </div>
@@ -479,10 +509,9 @@
                   <p
                     class="text-txt-secondary mb-6 line-clamp-2 text-base font-medium"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Cum sunt consectetur magnam commodi repellat accusantium
-                    velit porro voluptatum eligendi temporibus, eaque soluta
-                    facere iusto iste enim placeat quibusdam et error?
+                    Belajar programming membutuhkan latihan yang konsisten.
+                    Mulailah dari konsep dasar, buat project kecil, dan terus
+                    kembangkan kemampuan melalui praktik.
                   </p>
                 </div>
                 <a
@@ -514,8 +543,9 @@
                   <p
                     class="text-txt-secondary mb-6 line-clamp-2 text-base font-medium"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit facere modi autem.
+                    Tulisan ini membahas cara menyusun ide dan mengembangkan
+                    tulisan ilmiah agar pembahasannya lebih terarah, sistematis,
+                    dan mudah dipahami.
                   </p>
                 </div>
                 <a
@@ -547,8 +577,9 @@
                   <p
                     class="text-txt-secondary mb-6 line-clamp-2 text-base font-medium"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corrupti voluptatibus voluptatem earum?
+                    Menentukan topik yang tepat merupakan langkah penting dalam
+                    membuat tulisan ilmiah. Topik yang jelas akan membantu
+                    proses riset dan penyusunan pembahasan.
                   </p>
                 </div>
                 <a
@@ -580,8 +611,9 @@
                   <p
                     class="text-txt-secondary mb-6 line-clamp-2 text-base font-medium"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis modi enim earum.
+                    Penulisan ilmiah yang baik membutuhkan sumber yang relevan,
+                    struktur yang jelas, serta penyampaian argumen yang didukung
+                    oleh data dan referensi.
                   </p>
                 </div>
                 <a
@@ -613,8 +645,9 @@
                   <p
                     class="text-txt-secondary mb-6 line-clamp-2 text-base font-medium"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam nihil at quod.
+                    Proses penelitian tidak selalu berjalan sesuai rencana.
+                    Dengan pencatatan yang rapi dan evaluasi setiap tahap, hasil
+                    penelitian dapat disusun dengan lebih baik.
                   </p>
                 </div>
                 <a
@@ -642,8 +675,9 @@
               Hubungi Kami
             </h2>
             <p class="text-txt-secondary text-base font-medium md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              obcaecati!.
+              Silakan hubungi saya untuk berdiskusi mengenai project,
+              pengembangan aplikasi, kerja sama, atau kebutuhan teknologi yang
+              ingin Anda kembangkan.
             </p>
           </div>
         </div>
@@ -892,6 +926,18 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Back to Top Start -->
+    <a
+      href="#home"
+      class="bg-accent fixed right-4 bottom-4 z-9999 block h-14 w-14 rounded-full px-5 opacity-25 transition duration-300 ease-in-out hover:animate-pulse"
+      id="to-top"
+    >
+      <span
+        class="mt-5.25 block h-4 w-4 rotate-45 border-t-3 border-l-3 border-white"
+      ></span>
+    </a>
+    <!-- Back to Top End -->
 
     <script src="./src/screen-indicator.js"></script>
     <script src="./src/navbar.js"></script>
