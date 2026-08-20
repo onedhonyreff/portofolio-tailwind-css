@@ -36,10 +36,24 @@ setToggleTrigger(hamburger);
 navItems.forEach((navItem) => setToggleTrigger(navItem));
 
 darkToggle.addEventListener("click", function () {
-  darkToggle.checked
-    ? html.classList.add("dark")
-    : html.classList.remove("dark");
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
 });
+
+if (
+  localStorage.getItem("theme") === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  darkToggle.checked = true;
+} else {
+  darkToggle.checked = false;
+}
 
 // Navbar Fixed
 window.onscroll = function () {

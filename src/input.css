@@ -6,6 +6,8 @@
   --color-accent: #00a896; /* Penarik perhatian (Link, Badge, Border Aktif) */
   --color-accent-light: #02c39a; /* Tombol sekunder / Elemen penunjang terang */
   --color-light: #f0f3bd; /* Latar belakang komponen (Card background) */
+  --color-dark: #0f172b;
+  --color-dark-lighter: #1d293d;
   --color-txt-primary: #0f172b;
   --color-txt-secondary: #62748e;
 
@@ -35,6 +37,9 @@
   background-color: var(
     --color-txt-primary
   ); /* Memanggil warna kustom dari tema v4 */
+  @variant dark {
+    background-color: var(--color-white);
+  }
 }
 
 @utility hamburger-active {
@@ -65,4 +70,7 @@
   background-color: color-mix(in srgb, var(--color-white) 70%, transparent);
   backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgb(0, 0, 0, 0.2);
+  @variant dark {
+    background-color: color-mix(in srgb, var(--color-dark) 70%, transparent);
+  }
 }
